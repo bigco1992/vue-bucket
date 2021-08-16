@@ -78,7 +78,6 @@ export default {
 				bus.$emit('show:toast', `${response.data.data.title} was created`);
 				this.$router.push('/main');
 			} catch (error) {
-				console.log(error);
 				this.resultMessage = error.data.message;
 			}
 		},

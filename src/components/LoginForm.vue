@@ -180,12 +180,10 @@ export default {
 					username: this.signinUsername,
 					password: this.signinPassword,
 				});
-				console.log(response.data.user.nickname);
 				bus.$emit('show:toast', response.data.message);
 				this.$router.push('/main');
 				this.initForm();
 			} catch (error) {
-				console.log(error);
 				this.signinLogMessage = error.response.data;
 				bus.$emit('show:toast', this.signinLogMessage);
 			}
@@ -201,7 +199,6 @@ export default {
 				document.getElementById('signinBtn').click();
 				this.initSignupForm();
 			} catch (error) {
-				console.log(error.response);
 				if (error.response.status === 409) {
 					this.signupLogMessage = `${this.signupUsername} already exists`;
 				}

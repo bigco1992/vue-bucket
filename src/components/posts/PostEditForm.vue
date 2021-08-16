@@ -69,7 +69,6 @@ export default {
 				bus.$emit('show:toast', `${response.data.title} was editted`);
 				this.$router.push('/main');
 			} catch (error) {
-				console.log(error);
 				this.resultMessage = error.data.error.errmsg;
 			}
 		},
@@ -80,7 +79,7 @@ export default {
 			const { data } = await fetchPostById(id);
 			this.setForm(data);
 		} catch (error) {
-			console.log(error);
+			bus.$emit('show:toast', `error`);
 		}
 	},
 };

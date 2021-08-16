@@ -122,7 +122,6 @@ export default {
 				this.logMessage = 'User is created';
 				this.initForm();
 			} catch (error) {
-				console.log(error.response);
 				if (error.response.status === 409) {
 					this.logMessage = `${this.username} already exists`;
 				}

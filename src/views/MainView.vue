@@ -133,7 +133,7 @@ export default {
 				this.postItems = postItems;
 				return;
 			} catch (error) {
-				console.log(error);
+				bus.$emit('show:toast', `error`);
 			}
 		},
 		editPost(id) {
@@ -147,7 +147,7 @@ export default {
 					bus.$emit('show:toast', `${response.data.title} was deleted`);
 				}
 			} catch (error) {
-				console.log(error);
+				bus.$emit('show:toast', `error`);
 			}
 		},
 	},
