@@ -1,8 +1,6 @@
 <template>
 	<footer>
-		<a
-			href="https://github.com/joshua1988/vue-til/tree/complete"
-			target="_blank"
+		<a href="https://github.com/pepperKIM/vue-bucket" target="_blank"
 			>View GitHub source</a
 		>
 		<div>© 2021 BigCO</div>
