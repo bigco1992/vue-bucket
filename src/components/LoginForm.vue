@@ -182,7 +182,6 @@ export default {
 				});
 				bus.$emit('show:toast', response.data.message);
 				this.$router.push('/main');
-				console.log(response);
 				this.initForm();
 			} catch (error) {
 				this.signinLogMessage = error.response.data;
