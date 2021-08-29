@@ -1,15 +1,28 @@
-## 기술 스택
+## **MABU (My Bucket List)**
 
-- Vue.js 2.6.10
-- Vue Router
-- Vuex
+2021.08.08 ~ 2021.08.15
+
+사용자의 Bucket List를 조회, 작성, 수정, 삭제할 수 있는 Grid 형태의 미니 프로젝트입니다.
+
+## 사용한 기술
+
+### Front-End
+
+- Vue 2.6.14 + Vuex + Vue-router
+- Webpack
 - Axios
-- Vue Test Utils
+- Toast Pop-up Notification
 
-## 개발 환경
+### **Back-End**
 
-- [Chrome](https://www.google.com/intl/ko/chrome/)
-- [Git](https://git-scm.com/downloads)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Node.js LTS 버전(v10.x 이상)](https://nodejs.org/ko/)
-- [Vue.js Dev Tools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+- Node.js 14.17.3
+    - JWT
+    - Bcrypt
+- MongoDB
+
+### Deploy
+
+- AWS-EC2
+- Apache Tomcat
+- Nginx
+- Heroku
