@@ -1,8 +1,10 @@
 ## **MABU (My Bucket List) Ver.1.0**
+배포시 오류 
 
 2021.08.08 ~ 2021.08.15 (추가 기능이 생길 수 있습니다.)
 
 사용자의 Bucket List를 조회, 작성, 수정, 삭제할 수 있는 Grid 형태의 미니 프로젝트입니다.
+URL. https://mabu.kiyoungworld.com/
 
 ## 사용한 기술
 
